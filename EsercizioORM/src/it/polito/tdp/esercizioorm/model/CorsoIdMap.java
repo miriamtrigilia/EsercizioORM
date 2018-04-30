@@ -11,6 +11,10 @@ public class CorsoIdMap {
 		map = new HashMap<>();
 	}
 	
+	public Corso get(String codins) {
+		return map.get(codins);
+	}
+	
 	public Corso get(Corso corso) {
 		Corso old = map.get(corso.getCodIns());
 		if (old == null) {
